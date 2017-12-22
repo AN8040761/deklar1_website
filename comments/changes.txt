@@ -1,0 +1,37 @@
+16.06.2014 v1.06
+
+Just replace short php open tags with long ones as short tags don't work with default php config anymore.
+
+19.10.2012 v1.05
+
+1. Now it is possible to use Recaptcha to filter spam.
+2. Fixed bugs that caused PHP Notices.
+
+24.05.2008 v1.04
+
+1. A bug in admin.php which caused MySQL error in "Junk comments" section on MySQL 5 was fixed.
+2. Code of comments.php was refactored. All functions were renamed using smcom_ preffix in order to
+   avoid names collisions when the script included to another php script.
+3. A lot of new language packs were added.
+
+28.03.2007 v1.03
+
+Security issues were fixed.
+
+22.08.2006 v1.02
+
+Anti-spam feature based on WordPress API was added.
+
+13.06.2006 v1.01
+
+1. A bug which prevented more than one IP address from being banned was fixed.
+2. A problem in which a script couldn't be included into a PHP file with require()
+   and with virtual() on some server configurations was fixed.
+3. A bug which caused "rn" to be used instead of "new line" in email notifications
+   was fixed.
+4. Cosmetic changes were made in the default template.
+
+
+31.08.2005 v1.0
+
+Initial public release.

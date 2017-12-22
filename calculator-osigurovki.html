@@ -1,0 +1,81 @@
+<!DOCTYPE HTML Frameset DTD>
+<html>
+
+<head>
+<title>Калкулатор</title>
+<link rel="stylesheet" href="decl1_style.css">
+<meta charset="UTF-8">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+</head>
+
+<body style="margin-left: auto; margin-right: auto;> 
+<form id="test-form">
+  
+  <div>
+    <label>Field 1</label>
+    <input type="text" name="Timestamp" placeholder="Field 1"/>
+  </div>
+
+  <div>
+    <label>Име</label>
+    <input type="text" name="IME" placeholder="Име"/>
+  </div>
+  
+  <div>
+    <label>4. ЕИК</label>
+    <input type="text" name="4. EIK" placeholder="4. ЕИК"/>
+  </div>
+  
+  <div>
+    <label>12.3</label>
+    <input type="text" name="12.3" placeholder="12.3"/>
+  </div>
+
+  <div>
+    <button type="submit"id="submit-form">Submit</button>
+  </div>
+</form>
+<script>
+var $form = $('form#test-form'),
+    url = 'https://script.googleusercontent.com/macros/echo?user_content_key=Ka4feSFqD53u95NkEA8S_vhWgeoFRycpYChBH9nCepdtL8cIq7oVbRVAfy0sZnoYDmVnsfECmnQ-oXQMZXbrGY1SEHv3iVtom5_BxDlH2jW0nuo2oDemN9CCS2h10ox_1xSncGQajx_ryfhECjZEnHDD-02KK-1kaBxM72gP2E_DpucJL0fuecUShHdoKEnKnHIe_e_OpzDltYg6dKTV03V_gonBuE3x&lib=MvYwHHJPGpFLp9RXdGOxLsEfLE7v6TldH'
+
+$('#submit-form').on('click', function(e) {
+  e.preventDefault();
+  var jqxhr = $.ajax({
+    url: url,
+    method: "GET",
+    dataType: "json",
+    data: $form.serializeObject()
+  }).success(
+    // do something
+  );
+})
+</script>
+  <div  style="margin-left: auto; margin-right: auto;">
+<object   type="text/html" data="https://docs.google.com/forms/d/e/1FAIpQLSdAWYPU1moUku9BDZhs9XcNq8kkUpVtH0mDyyserb1ihDQkJA/viewform?hl=bg" width="40%" height="90%" style="margin-left: calc(30% + 10px); margin-right: calc(30% - 10px); overflow:auto;border:3px ridge rgb(191, 191, 191)">
+    </object>
+</div>
+<div style="text-align: center; margin: 10 10 10 10;">
+<a href=https://docs.google.com/spreadsheets/d/1hf2mhL5-nL5k32z1TPAG22BB7ZkaZZB9XE2B7pXymPY/pubhtml?gid=975172617&single=true title="" target="_blank"><button id="cmd" >Принтирай от оригинала</button></a>
+<a href=https://docs.google.com/spreadsheets/d/1hf2mhL5-nL5k32z1TPAG22BB7ZkaZZB9XE2B7pXymPY/export?format=pdf&gid=975172617 title="" target="_blank"><button id="cmd" >Изтегли като PDF</button></a>
+<a href=https://docs.google.com/spreadsheets/d/1TbZBYgU3BuARYRqY8PAwKY1RKxZ0zi2gq-nVqOzX0fA/export?format=csv&gid=335679278 title="След изтегляне - добавете 1 нов ред и преименувайте на EMPL2000.txt" target="_blank"><button id="cmd" >Изтегли като CSV</button></a>
+</div>
+  <div   style="margin-left: auto; margin-right: auto;">
+<object  type="text/html" data="https://docs.google.com/spreadsheets/d/1hf2mhL5-nL5k32z1TPAG22BB7ZkaZZB9XE2B7pXymPY/pubhtml?gid=975172617&single=true"   width="90%" height="90%" style="margin-left: 5%; margin-right: 5%;overflow:auto;border:3px ridge rgb(191, 191, 191)">
+    </object>
+</div>
+<div style="margin-left: auto; margin-right: auto;">
+<textarea rows="8" cols="60">
+Сайта е в процес на разработка и в момента може да 
+се ползва само с информационна или образователна цел.
+Калкулатора не е изчерпатален и може да се наложи 
+да изчакате до 5 мин за да видите резултата. 
+Не използвайте резултатите за съставяне на официални документи.
+</textarea>
+</div>
+
+
+</body>
+</html>		

@@ -1,0 +1,6 @@
+RewriteEngine On    # Turn on the rewriting engine
+RewriteRule ^$ main.php [nc,L]
+
+
+
+ 

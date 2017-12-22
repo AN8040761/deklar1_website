@@ -1,0 +1,70 @@
+ScriptsMill Comments Script v1.03 Beni Oku
+Ceviren : Asiye Kral
+
+
+Gerekenler:
+
+-PHP 3 or PHP 4
+-MySql database: Sunucunuzda yada hostunuzda yeni bir mysql hesabý yaratýnýz.
+
+========================================================================
+Scripti sunucuya yukleme:
+
+1. indirdiginiz dosyayi, harddiskinizde açin.
+
+2. Scripti sunucunuzda bir klasore yukleyin. 
+   ornek: /yorumlar
+
+   butun dosyalari ,ayni klasore yuklediginizden emin olunuz.
+
+3. Yukaridakileri yaptiktan sonra , tarayicinizin adres kismina "http://www.yoursite.com/yorumlar/install.php" yazip, scripti kurallara gore yukleyiniz.
+
+4. Gerekirse "config.php" dosyasini yeniden duzenleyin.
+
+========================================================================
+
+========================================================================
+Comments Script v1.02 surumune yukseltmek :
+
+1. Yeni paketteki "comments.php" dosyasini , sunucunuzdaki "comments.php" dosyasinin uzerine yukleyiniz..
+
+
+========================================================================
+Kullanim Sekli:
+
+Hangi sayfada kullanacak iseniz , o sayfaya asagidaki kodu yerlestiriniz:
+
+Eger "php" kullaniyorsaniz:
+
+ <?php require("/path/to/your/www-home/comments/comments.php"); ?>
+
+                YADA
+
+ <?php virtual("/comments/comments.php"); ?>
+ (bazi "php" versiyonlarinda calismayabilir.) 
+
+ Eger "www-home" yolunu bulamazsaniz:
+ <?php echo dirname(__FILE__); ?>
+
+ Kesinlikle scripti bu sekilde kullamayiniz: require("http://yoursite.com/comments/comments.php").
+
+
+Eger "SSI" kullaniyorsaniz:
+
+ <!--#include virtual="/comments/comments.php" -->
+
+Yada "ASP" kullaniyorsaniz:
+
+ <!--#include file="/comments/comments.php" -->
+ (test edilmedi)
+
+Script hangi sayfaya kondugunu anlar.
+
+"Tepmlates" ./templates" klasorunde yeni tepmlate yaratabilirsiniz 
+"config.php" dosyasini kontrol edip kendinize gore uyarlamayi unutmayiniz.
+ 
+Yeniliklerden beni bu mail ile haberdar edebilirsiniz: info@scriptsmill.com, 
+Bende bunlari ekleyecegim..
+========================================================================
+
+Yardim ve yeni versiyonlar icin bu adresi ziyaret ediniz : http://www.scriptsmill.com/
